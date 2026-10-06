@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="frmCadastro" name="frmCadastrar" action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+        <div>
+            <label for="txtNome">Nome:</label><input type="text" id="txtNome" name="txtNome" placeholder="Ex: Rafael Santos" maxlength="50">
+        </div>
+
+        <div>
+            <label for="txtEmail">Email:</label><input type="email" id="txtEmail" name="txtEmail" placeholder="Ex: rafael@gmail.com">
+        </div>
+        </fieldset>
+
+        <div>
+            <label for="dataNascimento">Data de nascimento (date):</label><input type="date" id="dataNascimento" name="dataNascimento" min="2026-09-26" max="2026-10-26">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Data de nascimento</legend>
+            <label>Data de nascimento:</label><input type="datetime-local" id="dataNascimento" name="dataNascimento" min="2026-09-26" max="2026-10-26">
+            </fieldset>
+        </div>
+
+        <div>
+            <br>
+            Área de interesse:
+            <br>
+            <input type="checkbox" name="chkInteresse" id="chkTecnologia" value="tecnologia"> <label for="chkTecnologia">Tecnologia</label>
+            <input type="checkbox" name="chkCulinaria" id="chkCulinaria" value="culinaria"> <label for="chkCulinaria">Culinária</label>
+            <input type="checkbox" name="chkModa" id="chkModa" value="moda"> <label for="chkModa">Moda</label>
+        </div>
+        <div>
+            <br>
+            <lable>--- Período ---</lable>
+            <br>
+            <input type="radio" name="rdoPeriodo" id="rdoPeriodoMatutino" value="M">
+            <label for="rdoPeriodoMatutino">Período Matutino</label>
+            <br>
+            <input type="radio" name="rdoPeriodo" id="rdoPeriodoVespertino" value="V">
+            <label for="rdoPeriodoVespertino">Período Vespertino</label>
+            <br>
+            <input type="radio" name="rdoPeriodo" id="rdoPeriodoNoturno" value="N">
+            <label for="rdoPeriodoNoturno">Período Noturno</label>
+        </div>
+        <div>
+            <br>
+            <label>Estado:</label>
+            <select id="uf" name="uf" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        <div>
+            <label for="arquivos"><img src="" alt="arquivos"></label>
+            <input type="file" id="arquivos" name="arquivos" accept="pdf,.docx" multiple style="display: none;">  
+        </div>
+        <div>
+            <label for="msg">Mensagem: </label>
+            <textarea id="msg" name="msg" rows="10" cols="100" maxlength="300" ></textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
